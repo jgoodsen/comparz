@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @product.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @product.logo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @product.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Best For</h1>
+    <p>
+      <%=raw @product.best_for %>
+    </p>
+  </section>
+  <section>
+    <h1>Brief Summary</h1>
+    <p>
+      <%=raw @product.brief_summary %>
+    </p>
+  </section>
+  <section>
+    <h1>Detailed Review</h1>
+    <p>
+      <%=raw @product.detailed_review %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="products">
+      <% @products.each do |product| %>
+        <li>
+          <%= link_to product.name, product_url(product) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

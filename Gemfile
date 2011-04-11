@@ -34,6 +34,7 @@ gem 'aws-s3', :require => 'aws/s3'
 # Anything you put in here will be overridden when the app gets updated.
 
 gem 'refinerycms',              '= 0.9.9.16'
+gem "refinerycms-news", '~> 1.1'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
@@ -59,3 +60,5 @@ end
 gem 'refinerycms-i18n',         '~> 0.9.9.16'
 
 # END USER DEFINED
+
+gem 'refinerycms-products', '1.0', :path => 'vendor/engines'
