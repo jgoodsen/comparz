@@ -35,6 +35,7 @@ gem 'aws-s3', :require => 'aws/s3'
 
 gem 'refinerycms',              '= 0.9.9.16'
 gem "refinerycms-news", '~> 1.1'
+gem 'refinerycms-blog', '~> 1.3'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'

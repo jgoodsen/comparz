@@ -36,10 +36,12 @@
 
   <%= javascript_include_tag 'modernizr-min' %>
 
-  <link type="text/css" href="/jquery-ui-1.i.11.custom/css/custom-theme/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
-  <script type="text/javascript" src="jquery-ui-1.i.11.custom/js/jquery-1.5.1.min.js"></script>
-  <script type="text/javascript" src="jquery-ui-1.i.11.custom/js/jquery-ui-1.8.11.custom.min.js"></script>
+  <link type="text/css" href="/jquery-ui-1.8.11.custom/css/custom-theme/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
+  <script type="text/javascript" src="/jquery-ui-1.8.11.custom/js/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="/jquery-ui-1.8.11.custom/js/jquery-ui-1.8.11.custom.min.js"></script>
 
+  <%= javascript_include_tag 'application' %>
+  
   <% #TODO: REMOVE yielded_head and yielded_head_libraries and deprecation notice 0.9.9 <=> 1.0 %>
   <%= yielded_head_libraries %>
   <%= yielded_head %>
